@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode Toggle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header with Navbar -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Dark Mode Toggler Switch -->
+    <div class="dark-mode-switch">
+      <label class="switch" style="padding: 10px; margin: 10px">
+        <span id="darkModeLabel" style="padding: 5px"> Dark Mode</span>
+        <input type="checkbox" id="darkModeToggle" class="toggle-checkbox" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <!-- Main content with form -->
+
+    <main>
+      <h3 style="text-align: center">DOM Manipulation</h3>
+      <p style="text-align: center">Web content changing dynamically</p>
+      <br />
+
+      <h1>Contact Us</h1>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          required
+        ></textarea
+        ><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Dynamically changing the footer colors</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
